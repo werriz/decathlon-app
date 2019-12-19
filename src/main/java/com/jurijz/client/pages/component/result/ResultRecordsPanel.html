@@ -1,0 +1,62 @@
+<wicket:panel xmlns:wicket="http://wicket.apache.org">
+    <div class="panel panel-default" style="border-style: ridge;">
+        <span wicket:id="feedback"></span>
+        <span wicket:id="panelMsg"></span>
+
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>100 m</th>
+                    <th>Long jump</th>
+                    <th>Shot put</th>
+                    <th>High jump</th>
+                    <th>400 m</th>
+                    <th>110 m hurdles</th>
+                    <th>Discus throw</th>
+                    <th>Pole vault</th>
+                    <th>Javelin throw</th>
+                    <th>1500 m</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr wicket:id="resultList">
+                        <td wicket:id="name"></td>
+                        <td wicket:id="run100m"></td>
+                        <td wicket:id="longJump"></td>
+                        <td wicket:id="shotPut"></td>
+                        <td wicket:id="highJump"></td>
+                        <td wicket:id="run400m"></td>
+                        <td wicket:id="run110mHurdles"></td>
+                        <td wicket:id="discusThrow"></td>
+                        <td wicket:id="poleVault"></td>
+                        <td wicket:id="javelinThrow"></td>
+                        <td wicket:id="run1500m"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="button" wicket:id="calculateResultBtn" value="Calculate">
+
+            <div wicket:id="calculatedResultsPanel">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Place</th>
+                            <th>Name</th>
+                            <th>Result Sum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr wicket:id="calculatedResultsList">
+                            <td wicket:id="place"></td>
+                            <td wicket:id="name"></td>
+                            <td wicket:id="resultSum"></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</wicket:panel>

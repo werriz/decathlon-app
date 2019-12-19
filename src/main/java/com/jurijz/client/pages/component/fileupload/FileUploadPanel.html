@@ -1,0 +1,28 @@
+<wicket:panel xmlns:wicket="http://wicket.apache.org">
+    <div class="panel panel-default" style="border-style: ridge;">
+        <span wicket:id="uploadFeedback"></span>
+        <span wicket:id="panelMsg"></span>
+
+        <form wicket:id="progressUpload">
+            <fieldset>
+                <legend>Upload form with progress bar</legend>
+                <p>
+                    <label for="uploadWithProgress">File</label>
+                    <input wicket:id="fileUploadField" type="file" id="uploadWithProgress"/>
+                </p>
+                <input type="submit" value="Upload!"/>
+                <span wicket:id="progress">[[upload progressbar]]</span>
+            </fieldset>
+        </form>
+
+        <div>
+            <h4>Current files in <span wicket:id="dir">(dir)</span>:</h4>
+            <table>
+                <tr wicket:id="fileList">
+                    <td width="200"><span wicket:id="fileName">(file)</span></td>
+                    <td><a href="#" wicket:id="fileDelete"><img src="delete.gif" border="0"/></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</wicket:panel>
